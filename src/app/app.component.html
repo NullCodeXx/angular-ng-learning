@@ -1,0 +1,14 @@
+<!-- 2 -->
+<select [(ngModel)]="selectedPage">
+    <option value="boucle">Boucle</option>
+    <option value="template">Template</option>
+    <option value="toto">todolist</option>
+</select>
+<app-boucle *ngIf="selectedPage ==='boucle'"></app-boucle>
+<app-template *ngIf="selectedPage ==='template'"></app-template>
+<app-todolist *ngIf="selectedPage ==='toto'"></app-todolist>
+
+<!-- Selecteur du boucle.component.ts -->
+<!-- <app-boucle></app-boucle> -->
+<!--Affiche les selector que l'on a crée (component)-->
+<!-- <app-template></app-template> -->

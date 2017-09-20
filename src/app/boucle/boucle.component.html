@@ -1,0 +1,6 @@
+<!-- Affiche le tableau -->
+
+<ng-container *ngFor="let aaa of tableau; index as bbb;even as pair">
+    <p *ngIf="pair">
+        {{bbb}} {{aaa}}
+    </p>

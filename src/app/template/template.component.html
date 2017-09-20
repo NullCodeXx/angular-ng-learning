@@ -1,0 +1,19 @@
+<!-- ngModel relation bidirectionel entre le component et la vue, coter interface répercussion coté component et vice vers sa -->
+<h1>
+    {{title}}
+</h1>
+<!-- Si on met [] autour de la 'class', la valeur sera = a une variable qui va rechercher.-->
+<p [class]='title'></p>
+<!-- Equivaut a la syntaxe faite pour ça -->
+<input type='text' value='{{title}}' />
+<!-- Si clik, template vers le component.-->
+<h2 (click)='methode()'>{{title}}</h2>
+<!-- ngModule du FormModule de app.module.ts -->
+<input type='text' [(ngModel)]='title' [hidden]="onOff">
+
+<!-- Add button  on off au click -->
+<button (click)="onOff = !onOff">Cacher, dans la meme page, checkbox pareil</button>
+<input type="checkbox" [(ngModel)]="onOff">
+<button (click)="buttonONOFF()">Cacher, avec la function dans le component.ts</button>
+<input type="number" [(ngModel)]="a">
+<input type="number" [(ngModel)]="b"> {{a+b}}

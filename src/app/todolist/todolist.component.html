@@ -1,0 +1,10 @@
+<!-- 4 -->
+<ul>
+    <li *ngFor="let item of todolist;index as clef">
+        {{item}}
+        <button (click)='removeTodo(clef)'>X</button>
+    </li>
+</ul>
+
+<input type="text" [(ngModel)]="newTodo">
+<button (click)="addTodo()">Ajouter</button>
