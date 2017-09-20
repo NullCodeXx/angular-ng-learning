@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BoucleComponent } from './boucle/boucle.component';
 import { TemplateComponent } from './template/template.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { TodoRetestComponent } from './todo-retest/todo-retest.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ //Toute class component crée doit être déclarer.
     AppComponent,
     BoucleComponent,
     TemplateComponent,
-    TodolistComponent
+    TodolistComponent,
+    TodoRetestComponent
   ],
   imports: [
     BrowserModule,

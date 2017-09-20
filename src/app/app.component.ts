@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // Pour le [(ngModel)] = 'title'
+  todoRetest = "valeur du app.component.ts";
   title = 'app works!';
   onOff: boolean = false;
   methode() {

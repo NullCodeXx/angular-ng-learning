@@ -1,0 +1,15 @@
+<h1>Page du component</h1>
+<!-- 3 Affiche le component.html qui est lus||charger src/app/todolist.component.html -->
+
+<!-- input for display and add element in array via button -->
+<input type="text">
+<button (click)="add()">Ajouter</button>
+
+<!-- Display -->
+<ul>
+    <h3>Affche le tableau (ngFor || boucle)</h3>
+    <li *ngFor="let items of todoRetest;">{{items}}
+        <!-- Ajoute un button delete dans le 'li' (qui boucle) pour qu'il soit a chaque element ajouter. -->
+        <button (click)="delete()">X</button>
+    </li>
+</ul>
