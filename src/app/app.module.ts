@@ -7,6 +7,7 @@ import { BoucleComponent } from './boucle/boucle.component';
 import { TemplateComponent } from './template/template.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { TodoRetestComponent } from './todo-retest/todo-retest.component';
+import {TodoService} from './shared/todo.services';
 
 @NgModule({
   declarations: [ //Toute class component crée doit être déclarer.
@@ -21,7 +22,7 @@ import { TodoRetestComponent } from './todo-retest/todo-retest.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [TodoService], //rend les component accessible au parent et enfant.
   bootstrap: [AppComponent]
 })
 export class AppModule {}
