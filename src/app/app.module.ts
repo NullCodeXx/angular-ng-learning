@@ -8,6 +8,8 @@ import { TemplateComponent } from './template/template.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { TodoRetestComponent } from './todo-retest/todo-retest.component';
 import {TodoService} from './shared/todo.services';
+import {HttpClientModule} from '@angular/common/http';
+import { TodoAjaxService } from './shared/todo-ajax.service';
 
 @NgModule({
   declarations: [ //Toute class component crée doit être déclarer.
@@ -20,9 +22,9 @@ import {TodoService} from './shared/todo.services';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule //Pour Ajax || Importer.
   ],
-  providers: [TodoService], //rend les component accessible au parent et enfant.
+  providers: [TodoService, TodoAjaxService], //rend les component accessible au parent et enfant.
   bootstrap: [AppComponent]
 })
 export class AppModule {}
