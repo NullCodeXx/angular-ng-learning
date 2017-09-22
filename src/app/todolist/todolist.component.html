@@ -1,9 +1,9 @@
 <!-- 4 -->
 <ul>
-    <li *ngFor="let item of todolist;index as clef">
+    <li *ngFor="let item of todolist">
         {{item.message}}
         <!-- ce que je récupere du db.json c'est la propriété message qui contient les valeurs.-->
-        <button (click)='removeTodo(clef)'>X</button>
+        <button (click)='removeTodo(item.id)'>X</button>
     </li>
 </ul>
 
