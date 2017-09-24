@@ -15,7 +15,7 @@ export class TodolistComponent implements OnInit {
   todolist:Todo[]; //Interface todo.ts dans le dossier shared
   newTodo:string;
   
-  constructor(private todoService:TodoAjaxService) {} //injection du service de dépendance pour angular.
+constructor(private todoService:TodoAjaxService) {} //injection du service de dépendance pour angular.
 
   ngOnInit() { //Dire au service d'aller chercher les todo et de les mettre dans la liste || Methode déclancher juste apres l'injection du service de dépendance.
     // this.todolist = this.todoService.getTodos();

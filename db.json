@@ -4,10 +4,26 @@
         "nom": "Milo",
         "race": "corki"
     }],
-    "Todo": [
-        { "id": 1, "message": "un" },
-        { "id": 2, "message": "deux" },
-        { "id": 3, "message": "trois" },
-        { "id": 4, "message": "quatre" }
-    ]
+    "Todo": [{
+            "id": 1,
+            "message": "un"
+        },
+        {
+            "id": 2,
+            "message": "deux"
+        },
+        {
+            "id": 3,
+            "message": "trois"
+        },
+        {
+            "id": 4,
+            "message": "quatre"
+        },
+        {
+            "message": "cinq",
+            "id": 5
+        }
+    ],
+    "clebard": []
 }

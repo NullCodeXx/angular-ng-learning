@@ -10,6 +10,7 @@ import { TodoRetestComponent } from './todo-retest/todo-retest.component';
 import {TodoService} from './shared/todo.services';
 import {HttpClientModule} from '@angular/common/http';
 import { TodoAjaxService } from './shared/todo-ajax.service';
+import { ClebardComponent } from './clebard/clebard.component';
 
 @NgModule({
   declarations: [ //Toute class component crée doit être déclarer.
@@ -17,14 +18,15 @@ import { TodoAjaxService } from './shared/todo-ajax.service';
     BoucleComponent,
     TemplateComponent,
     TodolistComponent,
-    TodoRetestComponent
+    TodoRetestCompon,
+    ClebardComponentent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule //Pour Ajax || Importer.
   ],
-  providers: [TodoService, TodoAjaxService], //rend les component accessible au parent et enfant.
+  providers: [TodoService, TodoAjaxService, ClebardService], //rend les component accessible au parent et enfant.
   bootstrap: [AppComponent]
 })
 export class AppModule {}
